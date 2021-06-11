@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Patient Management</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+	<div class="header mr-auto ml-auto mt-3">
+		<h1>Health Monitoring System</h1>
+	</div>
+	<div class="container mt-5">
+		<div class="row">
+			<div class="card col-3 mr-auto ml-auto" style="width: 18rem;">
+				<div class="card-body" style="padding-top: 50%;">
+				  <h5 class="card-title">Doctors</h5>
+				  <p class="card-text">Please login here if you are a doctor</p>
+				  <form action="http://localhost:8080/WebSocket/login" target="_blank">
+					<input type="text" name="username" value="doctor" hidden/>
+					<div class="text-center">
+						<button type="submit" class="btn btn-pass">Login</button>
+					</div>
+				  </form>
+				</div>
+			</div>
+			<div class="card col-3 mr-auto ml-auto" style="width: 18rem;">
+				<div class="card-body"style="padding-top: 50%;">
+				  <h5 class="card-title">Ambulance Personnel</h5>
+				  <p class="card-text">Please login here if you are ambulance operator</p>
+				  <form action="http://localhost:8080/WebSocket/login" target="_blank">
+					<input type="text" name="username" value="ambulance" hidden/>
+					<div class="text-center">
+						<button type="submit" class="btn btn-pass">Login</button>
+					</div>
+				  </form>
+				</div>
+			</div>
+			<div class="card col-3 mr-auto ml-auto" style="width: 18rem;">
+				<div class="card-body">
+				  <h5 class="card-title">Patients</h5>
+				  <p class="card-text">Please fill in the following information and login here if you are a patient</p>
+				  <form class="form-group" action="http://localhost:8080/WebSocket/login" target="_blank">
+					<label for="name" class="col-form-label">Name </label>
+					<div class="col-sm-6">
+					  <input type="text" class="form-control" id="name" name="username" required>
+					</div>
+					<label for="phone" class="col-form-label">Phone </label>
+					<div class="col-sm-6 mb-2">
+					  <input type="number" class="form-control" id="phone" name="phone" required>
+					</div>
+					<div class="text-center">
+						<button type="submit" class="btn btn-pass">Login</button>
+					</div>
+				</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery.slim.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+body{
+    background-color: palegoldenrod;
+    font-family: 'Segoe UI';
+}
+.form-control
+{
+    margin: auto;
+    width: auto;
+}
+.row-content
+{
+    text-align: center;
+    align-items: center;
+    padding: auto;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+}
+.onlyPrint{
+    display: none;
+}
+@media print {
+    .noPrint{
+      display:none;
+    }
+  }
+  @media print {
+    .onlyPrint{
+      display:table;
+    }
+  }
+.header{
+    margin-top: 50;
+    margin-bottom: 50;
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.table-pass{
+    margin: 50;
+    background-color: rgb(236, 228, 139);
+    color: black;
+    border:2px solid black;
+}
+.table{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: large;
+}
+.btn-pass{
+    border: solid black !important;
+}
+.btn-pass:hover{
+    background-color: black;
+    color: rgb(236, 228, 139);
+}
+.form-group{
+    margin:20;
+}
+.card
+{
+    border: 2px solid black;
+}
